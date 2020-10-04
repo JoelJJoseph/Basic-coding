@@ -6,7 +6,7 @@ clrscr();
 int exper,age,salary;
 cout<<"The person is experinced?"<<"Enter 1 for yes,0 for No:";
 cin>>exper;
-cout<<"Enter age of a person:";
+cout<<"Enter age of the person:";
 cin>>age;
 salary=(exper)?((age>35)?6000:(age>28)?4800:3000):2000;
 cout<<"The salary of the person is"<<salary<<"\n";
