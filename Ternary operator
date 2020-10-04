@@ -3,11 +3,26 @@
 void main()
 {
 clrscr();
-int exper,age,salary;
-cout<<"The person is experinced?"<<"Enter 1 for yes,0 for No:";
-cin>>exper;
+int age,salary,years;
+boolean exper=false;                                                    
+//cout<<"The person is experinced?"<<"Enter 1 for yes,0 for No:";    //use it as a single string
+cout<<"Experience of a person: ";
+cin>>years;
+exper=years>0?true:false;
 cout<<"Enter age of a person:";
 cin>>age;
+if(age<0 || years<0){
+  exit(0);
+ }
+//deciding salry on the basis of person's age and experience
+/*
+    age           experience                salary
+    any age         false                    2000
+    >35             true                     6000
+    >28             true                     4800
+    <28             true                     3000
+*/
 salary=(exper)?((age>35)?6000:(age>28)?4800:3000):2000;
 cout<<"The salary of the person is"<<salary<<"\n";
+getch();                                                                        //add this if using turbo c++ to hold the screen
 }
