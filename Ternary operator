@@ -1,3 +1,4 @@
+//main section
 #include<iostream.h>
 #include<conio.h>
 void main()
@@ -23,6 +24,7 @@ if(age<0 || years<0){
     <28             true                     3000
 */
 salary=(exper)?((age>35)?6000:(age>28)?4800:3000):2000;
-cout<<"The salary of the person is"<<salary<<"\n";
+cout<<"The salary of the person is"<<salary<<"\n";                              //use of ternary operator
 getch();                                                                        //add this if using turbo c++ to hold the screen
 }
+//end of code
