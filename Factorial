@@ -1,10 +1,11 @@
-#include <iostream>  
+/*#include <iostream>  
 #include<conio.h> 
 void main()  
 {  
    int i,fact=1,number;    
   cout<<"Enter any Number: ";    
- cin>>number;    
+ cin>>number;
+ 
   for(i=1;i<=number;i++)
   {    
       fact=fact*i;    
@@ -12,3 +13,25 @@ void main()
   cout<<"Factorial of " <<number<<" is: "<<fact<<endl;  
   getch();  
 }  
+*/
+//recurcive programs are much efficient
+
+#include<iostream>
+ using namespace std;
+ int factorial(int n);
+ int main()
+ {
+ 	int n;
+ cout << "Enter a positive integer: ";
+ cin >> n;
+ cout << "Factorial of " << n << " = " << factorial(n); 
+return 0;
+ }
+ int factorial(int n)
+ {
+ if(n > 1)
+ return n * factorial(n - 1);
+ else 
+return 1;
+ }
+
