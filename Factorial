@@ -16,21 +16,21 @@ void main()
 */
 //recurcive programs are much efficient
 
-#include<iostream>
+#include<iostream>                 //header section
  using namespace std;
  int factorial(int n);
- int main()
+ int main()                        //main function
  {
  	int n;
- cout << "Enter a positive integer: ";
+ cout << "Enter a positive integer: ";        //gathering info
  cin >> n;
  cout << "Factorial of " << n << " = " << factorial(n); 
 return 0;
  }
- int factorial(int n)
+ int factorial(int n)                   //function
  {
  if(n > 1)
- return n * factorial(n - 1);
+ return n * factorial(n - 1);                //code for recursive
  else 
 return 1;
  }
