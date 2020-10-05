@@ -5,7 +5,7 @@ void main()
 {
 clrscr();
 int age,salary,years;
-boolean exper=false;                                                    
+boolean exper=false;                                                  //use boolean for no confusion  
 //cout<<"The person is experinced?"<<"Enter 1 for yes,0 for No:";    //use it as a single string
 cout<<"Experience of a person: ";
 cin>>years;
